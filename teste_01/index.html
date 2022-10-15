@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
-		<title>Teste Objeto 3D</title>
+		<title>Igreja do Rosário 3D</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
@@ -16,15 +16,13 @@
 			}
 		</style>
 	</head>
-	<body ontouchstart="">
+	<body>
 		<script type="module">
 
-			import * as THREE from './js/three.module.js';
-			import { APP } from './js/app.js';
-			import { VRButton } from './js/VRButton.js';
+			import * as THREE from '../library/three.module.js';
+			import { APP } from './app.js';
 
 			window.THREE = THREE; // Used by APP Scripts.
-			window.VRButton = VRButton; // Used by APP Scripts.
 
 			var loader = new THREE.FileLoader();
 			loader.load( 'app.json', function ( text ) {

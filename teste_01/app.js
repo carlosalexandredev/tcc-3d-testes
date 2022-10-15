@@ -9,7 +9,6 @@ var APP = {
 		var loader = new THREE.ObjectLoader();
 		var camera, scene;
 
-		var vrButton = VRButton.createButton( renderer ); // eslint-disable-line no-undef
 
 		var events = {};
 
@@ -25,7 +24,6 @@ var APP = {
 
 			var project = json.project;
 
-			if ( project.vr !== undefined ) renderer.xr.enabled = project.vr;
 			if ( project.shadows !== undefined ) renderer.shadowMap.enabled = project.shadows;
 			if ( project.shadowType !== undefined ) renderer.shadowMap.type = project.shadowType;
 			if ( project.toneMapping !== undefined ) renderer.toneMapping = project.toneMapping;
@@ -115,12 +113,6 @@ var APP = {
 
 		};
 
-		this.setPixelRatio = function ( pixelRatio ) {
-
-			renderer.setPixelRatio( pixelRatio );
-
-		};
-
 		this.setSize = function ( width, height ) {
 
 			this.width = width;
@@ -170,87 +162,18 @@ var APP = {
 		}
 
 		this.play = function () {
-
-			if ( renderer.xr.enabled ) dom.append( vrButton );
-
 			startTime = prevTime = performance.now();
-
-			document.addEventListener( 'keydown', onKeyDown );
-			document.addEventListener( 'keyup', onKeyUp );
-			document.addEventListener( 'pointerdown', onPointerDown );
-			document.addEventListener( 'pointerup', onPointerUp );
-			document.addEventListener( 'pointermove', onPointerMove );
-
-			dispatch( events.start, arguments );
-
 			renderer.setAnimationLoop( animate );
-
 		};
 
-		this.stop = function () {
-
-			if ( renderer.xr.enabled ) vrButton.remove();
-
-			document.removeEventListener( 'keydown', onKeyDown );
-			document.removeEventListener( 'keyup', onKeyUp );
-			document.removeEventListener( 'pointerdown', onPointerDown );
-			document.removeEventListener( 'pointerup', onPointerUp );
-			document.removeEventListener( 'pointermove', onPointerMove );
-
-			dispatch( events.stop, arguments );
-
-			renderer.setAnimationLoop( null );
-
-		};
 
 		this.render = function ( time ) {
 
-			dispatch( events.update, { time: time * 1000, delta: 0 /* TODO */ } );
+			dispatch( events.update, { time: time * 1000, delta: 0 } );
 
 			renderer.render( scene, camera );
 
 		};
-
-		this.dispose = function () {
-
-			renderer.dispose();
-
-			camera = undefined;
-			scene = undefined;
-
-		};
-
-		//
-
-		function onKeyDown( event ) {
-
-			dispatch( events.keydown, event );
-
-		}
-
-		function onKeyUp( event ) {
-
-			dispatch( events.keyup, event );
-
-		}
-
-		function onPointerDown( event ) {
-
-			dispatch( events.pointerdown, event );
-
-		}
-
-		function onPointerUp( event ) {
-
-			dispatch( events.pointerup, event );
-
-		}
-
-		function onPointerMove( event ) {
-
-			dispatch( events.pointermove, event );
-
-		}
 
 	}
 
