@@ -25,6 +25,12 @@ var APP = {
         var eixos = new THREE.AxesHelper(10);
         cena.add(eixos);
 
+        //Criando grid
+        const size = 10;
+        const divisions = 10;
+        const gridHelper = new THREE.GridHelper( size, divisions );
+        cena.add( gridHelper );
+
         //Caso o Usuário redimencione a página atualize o canva
         window.addEventListener('resize', function(){
             renderer.setSize(window.innerWidth, window.innerHeight);
@@ -74,12 +80,6 @@ var APP = {
 
         //Adicionando wireframe a cena
         cena.add(linhaCubo)
-
-        //Criando grid
-        const size = 10;
-        const divisions = 10;
-        const gridHelper = new THREE.GridHelper( size, divisions );
-        cena.add( gridHelper );
 
         //Posicionamento da camera
         camera.position.z = 5;
