@@ -37,30 +37,30 @@ A Three.js é uma biblioteca de código aberto e é mantida por uma comunidade a
 
 ## Testes
 
-**[Igreja do Rosário](https://carlosalexandredev.github.io/3d-view-poc/teste_01/index.html)**
+**[Igreja do Rosário](https://carlosalexandredev.github.io/tcc-3d-testes/teste_01/index.html)**
 ![igreja-rosario.gif](assests-readme/igreja-rosario.gif)
 
 ___
 
-**[Cubo Girando](https://carlosalexandredev.github.io/3d-view-poc/teste_02/index.html)**
+**[Cubo Girando](https://carlosalexandredev.github.io/tcc-3d-testes/teste_02/index.html)**
 ![cubo-rotacionando.gif](assests-readme/cubo-rotacionando.gif)
 
 ___
 
-**[Abstração com ação Click](https://carlosalexandredev.github.io/3d-view-poc/teste_03/index.html)**
+**[Abstração com ação Click](https://carlosalexandredev.github.io/tcc-3d-testes/teste_03/index.html)**
 ![abstracao-com-click.gif](assests-readme/abstracao-com-click.gif)
 
 ___
 
-**[Abstração GUI Interativa](https://carlosalexandredev.github.io/3d-view-poc/teste_04/index.html)**
+**[Abstração GUI Interativa](https://carlosalexandredev.github.io/tcc-3d-testes/teste_04/index.html)**
 ![abstracao-com-gui-interativa.gif](assests-readme/abstracao-com-gui-interativa.gif)
 
 ___
 
-**[Câmera TackBall](https://carlosalexandredev.github.io/3d-view-poc/teste_05/index.html)**
+**[Câmera TackBall](https://carlosalexandredev.github.io/tcc-3d-testes/teste_05/index.html)**
 ![camera-tackball.gif](assests-readme/camera-tackball.gif)
 
 ___
 
-**[Pedestal Cristo Redentor](https://carlosalexandredev.github.io/3d-view-poc/teste_06/index.html)**
+**[Pedestal Cristo Redentor](https://carlosalexandredev.github.io/tcc-3d-testes/teste_06/index.html)**
 ![pedestal-cristo-redentor.gif](assests-readme/pedestal-cristo-redentor.gif)
