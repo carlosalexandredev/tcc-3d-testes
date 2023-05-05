@@ -5,11 +5,7 @@
 
 ## Motivação
 
-Este repositório tem como objetivo a realização de testes isolados utilizando a biblioteca open-source Three.js, com 
- exemplos praticos que poderam ser melhorados e utilizados no meu TCC que busca demonstrar como a cultura e a tecnologia podem trabalhar juntas para
-promover o desenvolvimento artístico e cultural. Utilizando a computação gráfica e o desenvolvimento Web, o projeto visa resolver problemas relacionados à desvalorização da
-herança cultural e mostrar como a tecnologia pode ser aplicada como uma ferramenta
-para incentivar a arte e a cultura no estado.
+Este repositório contém testes isolados utilizando a biblioteca open-source Three.js, com exemplos práticos que poderão ser utilizados em meu TCC. O objetivo do meu TCC é demonstrar como a tecnologia pode ser utilizada para promover o desenvolvimento artístico e cultural, solucionando problemas relacionados à desvalorização da herança cultural. Por meio do uso da computação gráfica e do desenvolvimento web, pretendo mostrar como a tecnologia pode ser aplicada como uma ferramenta para incentivar a arte e a cultura.
 
 
 ## Computação Gráfica
